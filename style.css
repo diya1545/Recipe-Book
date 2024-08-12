@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@500&family=Poppins:ital,wght@0,600;1,100;1,400&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.3s ease;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .container {
+    position: relative;
+    width: 100%; 
+   
+} */
+  /* .container img {
+    width: 100%;
+    height: 450px;
+    background-repeat:repeat-x ;
+  } */
+  /* .title {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  } */
+.container img{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: repeat;
+}
+.image{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url('cookie1.jpeg');
+    z-index: 1;
+    transition: 0.3s ease;
+    /* filter: blur(5px);
+  -webkit-filter: blur(8px); */
+} 
+ .image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 1;
+    z-index: -1;
+    transition: background-color .3s;
+    
+}
+.info{
+    color: white;
+    padding-top: 8rem;
+    z-index: 9;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.title{
+    font-weight: 700;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 6px;
+}
+.para{
+    font-size: 20px;
+    color: white;
+    padding-right: 40rem;
+    margin-left: 6px;
+    padding-top: 20px;
+
+}
+.bt{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    border-color: 0px solid white;
+}
+.bt a{
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}
+.bt a:hover{
+    text-decoration: none;
+    color: chocolate;
+}
+.b{
+    font-weight: 500;
+    text-align: center;  
+}
+.man{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container2{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(163, 152, 152);
+    border-radius:5px ;
+    display: flex;
+}
+.c img{
+    width: 100px;
+    height: 70px;
+    padding-left: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.p{
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+    margin-left: 15px ;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.sp{
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+}
+a{
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 50px;
+}
+.man1{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.c1{
+    width: 400px;
+    height: 550px;
+    border-radius: 8px;
+    background-color:rgb(163, 152, 152) ;
+}
+.c1 a{
+    margin-left:3px ;
+}
+.c1 img{
+    width: 330px;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 33px;
+    border-radius: 10px;
+    
+    transition: 0.3s ease;
+}
+.c1 img:hover{
+   transform: scale(1.1);
+   box-shadow: 10px 10px rgb(204, 193, 193);
+}
+.h{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.star{
+   padding-left: 135px;
+}
+.checked{
+    color: orange;
+}
+.p1{
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.for{
+    width: 450px;
+    height: 600px;
+    background-color: antiquewhite;
+    position: relative;
+    margin-left: 500px;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.co{
+    display: flex;
+}
+.co img{
+    height: 50px;
+    width: 60px;
+    padding: 30px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 45px;
+    text-transform: uppercase;
+}
+.f1{
+    font-size:25px;
+    font-weight: bold;
+    padding-left: 40px;
+    font-family: sans-serif;
+}
+.f2{
+    font-size: medium;
+    font-family: sans-serif;
+    padding-left: 40px;
+    padding-top: 10px;
+    word-spacing: 3px;
+    color: grey;
+    margin-bottom: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-inline:10px;
+    
+}
+/* .low{
+    width: 200px;
+    margin-left: 20px;
+    
+}
+.lowo{
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+}
+.sty{
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 100px;
+}
+.st{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+.sty1{
+    margin-left: 20px;
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.st1{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px black solid;
+    margin: 20px;
+} */
+
+/* .b1{
+    width: 380px;
+    height: 40px;
+    background-color: rgb(209, 153, 63);
+    border-radius: 7px;
+    margin-bottom: 100px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.bi:hover{
+    background-color:rgb(201, 130, 16) ;
+}
+a{
+    font-size: larger;
+    font-weight: 550;
+    letter-spacing: 2px;
+} */
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 55px;
+    margin-top: 77px;
+    
+}
+.footer .txt{
+    color: rgb(163, 152, 152);
+}
+.txt p{
+    margin-top: 12px;
+}
+.txt .icon1:hover{
+    color: rgb(209, 90, 195);
+}
+.txt .icon2:hover{
+    color:rgb(98, 98, 215);
+}
+.txt .icon:hover{
+    color: grey;
+}
+.txt a{
+    color: white;
+}
+/* .txt a{
+    border: 0px solid;
+     height: 2rem;
+     width: 2rem;
+     line-height: 2rem;
+     border-radius: .5rem;
+     color: black;
+     margin-left: .1rem;
+     background: white;
+     text-align: center;
+  }
+  
+  .txt a:hover{
+    background: green;
+      color: #fff;
+  } */

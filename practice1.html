@@ -1,0 +1,206 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .review{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    width: 800px;
+    height: 400px;
+    margin-top: 63px;
+}
+.review .customer{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 11px;
+    transition: 0.5s ease;
+     
+}
+.customer img{
+    width: 33%;
+    border-radius: 50%;
+}
+.customer i{
+    font-size: 22px;
+    color: rgb(255, 132, 0);
+    margin-top: 11px;
+}
+.head h1{
+    text-align: center;
+    font-size: 44px;
+    margin-top: 53px;
+    margin-left: 22px;
+}
+.head span{
+    color: rgb(255, 119, 0);
+}
+.btn{
+    text-align: center;
+}
+.btn button{
+    width: 140px;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    margin-inline: 11px;
+    background-color: rgb(255, 111, 0);
+}
+</style>
+
+<script>
+    let slide = document.querySelectorAll(".customer");
+let count = 0;
+console.log(slide);
+
+slide.forEach(function(customer, index){
+    customer.style.left=${index * 100}%
+})
+
+function next(){
+    count ++;
+    if(count == slide.length){
+        count=0;
+    }
+    bar()
+}
+
+function pre(){
+    count--;
+    if(count == -1){
+        count = slide.length-1
+    }
+    bar()
+}
+
+
+function bar(){
+    slide.forEach(function(customer){
+        customer.style.transform = translateX(-${count * 100}%)
+    })
+}
+
+let a = {
+    greet:"HI"
+}
+let c;
+c=a;
+a.age=11;
+
+console.log(c.age);
+</script>
+<body>
+    <div class="head">
+        <h1>Customer <span>Review</span></h1>
+    </div>
+    <div class="review">
+
+        <div class="customer">
+            <img src="pasta.jpg" alt=""> <br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere modi, repudiandae nostrum obcaecati quo?</p>
+            
+        </div>
+        <div class="customer">
+            <img src="noodle.jpg" alt=""> <br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere modi, repudiandae nostrum obcaecati quo?</p>
+            
+        </div>
+        <div class="customer">
+            <img src="soup.jpg" alt=""> <br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere modi, repudiandae nostrum obcaecati quo?</p>
+            
+        </div>
+
+        
+    </div>
+    <div class="btn">
+        <button onclick="pre()">Prev</button>
+        <button onclick="next()">Next</button>
+
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="header">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Categories</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="burger.html">Burger</a>
+                <a class="dropdown-item" href="fries.html">Fries</a>
+                <a class="dropdown-item" href="soup.html">Soup</a>
+                <a class="dropdown-item" href="cake.html">Cake</a>
+              </div>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="recipe.html">Recipe</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <div class="input-group ps-50">
+            <div id="navbar-search-autocomplete" class="form-outline" data-mdb-input-init>
+              <input type="search" id="form1" placeholder="Search" class="form-control" />
+              <!-- <label class="form-label" for="form1" id="s">Search</label> -->
+            </div>
+            <button type="button" class="btn btn-primary bg-dark"  data-mdb-ripple-init>
+              <i class="fas fa-search" ></i>
+            </button>
+        </div> 
+        </div>
+    </nav>
+</body>
+</html>
